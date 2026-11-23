@@ -50,7 +50,7 @@ jobs:
           SCHEDULE_TIME=12:00
           HTTP_PROXY=${{ secrets.HTTP_PROXY }}
           USE_STATE_CACHE=false
-          EMAIL_NOTIFY_ENABLED=true
+          EMAIL_NOTIFY_ENABLED=false
           EMAIL_NOTIFY_POLICY=${{ vars.EMAIL_NOTIFY_POLICY || 'failure_only' }}
           EMAIL_SMTP_HOST=smtp.qq.com
           EMAIL_SMTP_USER=${{ secrets.EMAIL_SMTP_USER }}
